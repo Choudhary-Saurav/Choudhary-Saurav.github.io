@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saurav Choudhary - Home</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('assets/images/DNA_logo.png') center/cover;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        nav {
+            background: #2c3e50;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .intro-section {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
+        }
+        
+        .intro-content {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        .profile-image {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid rgba(0,0,0,0.08);
+            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+        }
+        
+        .intro-text {
+            max-width: 720px;
+            font-size: 1.1rem;
+            line-height: 1.7;
+        }
+        
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+        
+        .feature-card {
+            background: white;
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+        }
+        
+        .feature-card h3 {
+            color: #2c3e50;
+            margin-bottom: 15px;
+            font-size: 1.4rem;
+        }
+        
+        .feature-card p {
+            color: #666;
+            line-height: 1.6;
+        }
+        
+        .quick-links {
+            text-align: center;
+            margin-top: 50px;
+            padding: 30px;
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+        }
+        
+        .quick-links strong {
+            display: block;
+            margin-bottom: 15px;
+            font-size: 1.1rem;
+            color: #2c3e50;
+        }
+        
+        .quick-links a {
+            color: #3498db;
+            text-decoration: none;
+            margin: 0 10px;
+            font-weight: 500;
+        }
+        
+        .quick-links a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Saurav Choudhary</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index_preview.html">Home</a></li>
+            <li><a href="about_preview.html">About</a></li>
+            <li><a href="research_preview.html">Research</a></li>
+            <li><a href="publications_preview.html">Publications</a></li>
+            <li><a href="cv.html">CV</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="intro-section">
+            <div class="intro-content">
+                <img src="assets/images/Saurav_profile.JPG" alt="Saurav Choudhary" class="profile-image">
+                <div class="intro-text">
+                    <p>
+                        I'm <strong>Saurav</strong>, a Bioinformatics PhD student at the University of Georgia exploring how
+                        genetic variation shapes complex traits and disease using single-cell genomics.
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="features">
+            <div class="feature-card">
+                <h3>Genome Assembly</h3>
+                <p>Chromosome-scale genome assembly and annotation using long-read sequencing.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>Single-cell Genomics</h3>
+                <p>Large single-cell datasets for cell-type discovery and biological interpretation.</p>
+            </div>
+            
+            <div class="feature-card">
+                <h3>GWAS Integration</h3>
+                <p>Connecting human genetics to trait-relevant cell types, genes, and mechanisms.</p>
+            </div>
+        </div>
+        
+        <div class="quick-links">
+            <strong>Quick links:</strong>
+            <a href="assets/pdfs/Saurav_Choudhary_2025.pdf">CV</a> ·
+            <a href="https://github.com/Saurav0731" target="_blank">GitHub</a> ·
+            <a href="https://scholar.google.com/citations?user=HQW7pr0AAAAJ&hl=en" target="_blank">Google Scholar</a> ·
+            <a href="mailto:saurav.choudhary@uga.edu">Email</a>
+        </div>
+    </div>
+</body>
+</html>

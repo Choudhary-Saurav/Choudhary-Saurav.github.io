@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About - Saurav Choudhary</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+
+        header {
+            background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('assets/images/DNA_logo.png') center/cover;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        nav {
+            background: #34495e;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        .container {
+            max-width: 1400px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        /* Custom styling from original file */
+        .about-grid {
+            display: flex;
+            gap: 28px;
+            align-items: flex-start;
+            justify-content: center;
+            width: 100%;
+            max-width: 1400px;
+            margin: 18px auto 0 auto;
+            flex-wrap: nowrap;
+        }
+        
+        .edu-card {
+            width: 620px !important;
+            max-width: 620px !important;
+            background: #ffffff;
+            border: 1px solid rgba(0,0,0,0.08);
+            border-radius: 18px;
+            padding: 32px;
+            box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+        }
+        
+        .edu-title {
+            font-weight: 900;
+            font-size: 1.35rem;
+            margin-bottom: 20px;
+            text-transform: uppercase;
+            letter-spacing: 0.08em;
+        }
+        
+        .edu-item {
+            display: flex;
+            gap: 20px;
+            align-items: center;
+            padding: 20px 0;
+            border-bottom: 1px solid rgba(0,0,0,0.06);
+        }
+        
+        .edu-item:last-child {
+            border-bottom: none;
+        }
+        
+        .edu-logo {
+            width: 90px;
+            height: 90px;
+            border-radius: 16px;
+            object-fit: contain;
+            background: #fff;
+            border: 1px solid rgba(0,0,0,0.06);
+            flex-shrink: 0;
+        }
+        
+        .edu-text {
+            line-height: 1.3;
+            flex: 1;
+        }
+        
+        .edu-school {
+            font-weight: 850;
+            font-size: 1.15rem;
+            margin-bottom: 4px;
+        }
+        
+        .edu-degree {
+            font-size: 1.05rem;
+            opacity: 0.85;
+            margin-bottom: 2px;
+        }
+        
+        .edu-years {
+            font-size: 0.95rem;
+            opacity: 0.70;
+        }
+        
+        .about-textbox {
+            flex: 1;
+            width: auto;
+            max-width: 750px;
+            min-width: 650px;
+            background: rgba(120, 190, 255, 0.22);
+            border-radius: 22px;
+            padding: 34px;
+            box-shadow: 0 10px 28px rgba(0,0,0,0.08);
+            border: 1px solid rgba(0,0,0,0.06);
+        }
+        
+        .about-textbox p {
+            margin-top: 0;
+            margin-bottom: 14px;
+            line-height: 1.65;
+            font-size: 1.06rem;
+        }
+        
+        @media (max-width: 1100px) {
+            .about-grid {
+                flex-wrap: wrap;
+                justify-content: center;
+            }
+            
+            .edu-card {
+                width: 100%;
+                max-width: 550px;
+            }
+            
+            .about-textbox {
+                min-width: unset;
+                max-width: 100%;
+            }
+        }
+        
+        @media (max-width: 600px) {
+            .edu-logo {
+                width: 70px;
+                height: 70px;
+            }
+            
+            .edu-school {
+                font-size: 1.05rem;
+            }
+            
+            .edu-card {
+                padding: 24px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index_preview.html">Home</a></li>
+            <li><a href="about_preview.html">About</a></li>
+            <li><a href="research_preview.html">Research</a></li>
+            <li><a href="publications_preview.html">Publications</a></li>
+            <li><a href="cv.html">CV</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="about-grid">
+            <!-- LEFT: EDUCATION CARD -->
+            <div class="edu-card">
+                <div class="edu-title">Education</div>
+                
+                <div class="edu-item">
+                    <img class="edu-logo" src="assets/images/UGA_logo.png" alt="University of Georgia logo">
+                    <div class="edu-text">
+                        <div class="edu-school">University of Georgia</div>
+                        <div class="edu-degree">PhD, Bioinformatics</div>
+                        <div class="edu-years">2023 – Present</div>
+                    </div>
+                </div>
+                
+                <div class="edu-item">
+                    <img class="edu-logo" src="assets/images/IIITD_logo.png" alt="IIIT-Delhi logo">
+                    <div class="edu-text">
+                        <div class="edu-school">IIIT-Delhi</div>
+                        <div class="edu-degree">M.Tech, Computational Biology</div>
+                        <div class="edu-years">2021 – 2023</div>
+                    </div>
+                </div>
+                
+                <div class="edu-item">
+                    <img class="edu-logo" src="assets/images/Amity_logo.png" alt="Amity University logo">
+                    <div class="edu-text">
+                        <div class="edu-school">Amity University</div>
+                        <div class="edu-degree">B.Tech, Biotechnology</div>
+                        <div class="edu-years">2017 – 2021</div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- RIGHT: ABOUT TEXT -->
+            <div class="about-textbox">
+                <p>
+                    I'm <b>Saurav</b>, a Bioinformatics PhD candidate at the University of Georgia, where I explore the
+                    hidden stories written in our DNA. My work focuses on understanding how genetic variation shapes
+                    complex traits and disease using large-scale single-cell datasets.
+                </p>
+                
+                <p>
+                    Think of it like reading <b>millions of tiny instruction manuals</b>—one cell at a time—to discover what
+                    actually changes when biology goes from "healthy" to "complex".
+                </p>
+                
+                <p>
+                    I enjoy building clean workflows, making results easy to interpret, and turning complicated genomic data
+                    into clear biological insight. Outside research, I'm usually exploring good food, watching Hindi comedy
+                    movies, or experimenting with new tools that make analysis faster and cleaner.
+                </p>
+                
+                <p style="margin-bottom:0;">
+                    If you're working on genomics, single-cell, or data-driven biology and want to collaborate—<b>let's connect!</b>
+                </p>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

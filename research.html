@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Research - Saurav Choudhary</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f5f5f5;
+        }
+        
+        header {
+            background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('assets/images/DNA_logo.png') center/cover;
+            color: white;
+            padding: 80px 20px;
+            text-align: center;
+            min-height: 300px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        nav {
+            background: #34495e;
+            padding: 15px 0;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+        }
+        
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        
+        nav a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #3498db;
+        }
+        
+        .container {
+            max-width: 900px;
+            margin: 40px auto;
+            padding: 0 20px;
+        }
+        
+        .research-section {
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            margin-bottom: 30px;
+        }
+        
+        .research-section h2 {
+            color: #2c3e50;
+            margin-bottom: 20px;
+            font-size: 1.8rem;
+            border-bottom: 3px solid #3498db;
+            padding-bottom: 10px;
+        }
+        
+        .research-section p {
+            margin-bottom: 15px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+        }
+        
+        .research-section ul {
+            margin-left: 25px;
+            margin-top: 15px;
+        }
+        
+        .research-section li {
+            margin-bottom: 10px;
+            line-height: 1.7;
+        }
+        
+        .research-section strong {
+            color: #2c3e50;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Research</h1>
+    </header>
+    
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="research.html">Research</a></li>
+            <li><a href="publications.html">Publications</a></li>
+            <li><a href="cv.html">CV</a></li>
+        </ul>
+    </nav>
+    
+    <div class="container">
+        <div class="research-section">
+            <h2>Single-cell Genomics</h2>
+            <p>
+                My research focuses on leveraging single-cell technologies to understand cellular heterogeneity and gene 
+                regulation mechanisms. I work with large-scale scRNA-seq and scATAC-seq datasets to map transcriptional 
+                and epigenomic landscapes.
+            </p>
+        </div>
+        
+        <div class="research-section">
+            <h2>Multi-omics Integration</h2>
+            <p>
+                I develop and apply computational approaches to integrate multiple layers of genomic data, including:
+            </p>
+            <ul>
+                <li>Transcriptomics (RNA-seq, single-cell RNA-seq)</li>
+                <li>Epigenomics (ATAC-seq, scATAC-seq)</li>
+                <li>Genetic variation (GWAS, fine-mapping)</li>
+            </ul>
+        </div>
+        
+        <div class="research-section">
+            <h2>Computational Tools</h2>
+            <p>
+                I actively contribute to and develop bioinformatics pipelines using:
+            </p>
+            <ul>
+                <li><strong>R/Bioconductor:</strong> Seurat, ArchR, SCAVENGE</li>
+                <li><strong>Python:</strong> Data processing and analysis workflows</li>
+                <li><strong>HPC environments:</strong> Large-scale genomic data analysis</li>
+            </ul>
+        </div>
+    </div>
+</body>
+</html>
