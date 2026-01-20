@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>About - Saurav Choudhary</title>
+
     <style>
         * {
             margin: 0;
@@ -61,8 +62,10 @@
             margin: 40px auto;
             padding: 0 20px;
         }
-        
-        /* Custom styling from original file */
+
+        /* =========================
+           CENTERED TWO-COLUMN LAYOUT
+           ========================= */
         .about-grid {
             display: flex;
             gap: 28px;
@@ -74,9 +77,12 @@
             flex-wrap: nowrap;
         }
         
+        /* =========================
+           LEFT: EDUCATION CARD
+           ========================= */
         .edu-card {
-            width: 620px !important;
-            max-width: 620px !important;
+            width: 620px;
+            max-width: 620px;
             background: #ffffff;
             border: 1px solid rgba(0,0,0,0.08);
             border-radius: 18px;
@@ -111,6 +117,7 @@
             object-fit: contain;
             background: #fff;
             border: 1px solid rgba(0,0,0,0.06);
+            padding: 10px;
             flex-shrink: 0;
         }
         
@@ -136,6 +143,9 @@
             opacity: 0.70;
         }
         
+        /* =========================
+           RIGHT: ABOUT DESCRIPTION BOX
+           ========================= */
         .about-textbox {
             flex: 1;
             width: auto;
@@ -154,7 +164,36 @@
             line-height: 1.65;
             font-size: 1.06rem;
         }
+
+        /* Headings inside blue card */
+        .about-heading {
+            margin: 0 0 12px 0;
+            font-size: 1.25rem;
+            font-weight: 900;
+            letter-spacing: 0.02em;
+            color: #1f2d3d;
+        }
+
+        /* Hobby tags */
+        .about-pills {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 10px;
+            margin: 10px 0 18px 0;
+        }
+
+        .pill {
+            display: inline-block;
+            padding: 8px 12px;
+            border-radius: 999px;
+            background: rgba(255,255,255,0.65);
+            border: 1px solid rgba(0,0,0,0.06);
+            font-size: 0.95rem;
+        }
         
+        /* =========================
+           MOBILE RESPONSIVE
+           ========================= */
         @media (max-width: 1100px) {
             .about-grid {
                 flex-wrap: wrap;
@@ -163,7 +202,7 @@
             
             .edu-card {
                 width: 100%;
-                max-width: 550px;
+                max-width: 650px;
             }
             
             .about-textbox {
@@ -188,6 +227,7 @@
         }
     </style>
 </head>
+
 <body>
     <header>
         <h1>About</h1>
@@ -205,6 +245,7 @@
     
     <div class="container">
         <div class="about-grid">
+
             <!-- LEFT: EDUCATION CARD -->
             <div class="edu-card">
                 <div class="edu-title">Education</div>
@@ -239,28 +280,46 @@
             
             <!-- RIGHT: ABOUT TEXT -->
             <div class="about-textbox">
-                <p>
-                    I'm <b>Saurav</b>, a Bioinformatics PhD candidate at the University of Georgia, where I explore the
-                    hidden stories written in our DNA. My work focuses on understanding how genetic variation shapes
-                    complex traits and disease using large-scale single-cell datasets.
-                </p>
-                
-                <p>
-                    Think of it like reading <b>millions of tiny instruction manuals</b>—one cell at a time—to discover what
-                    actually changes when biology goes from "healthy" to "complex".
-                </p>
-                
-                <p>
-                    I enjoy building clean workflows, making results easy to interpret, and turning complicated genomic data
-                    into clear biological insight. Outside research, I'm usually exploring good food, watching Hindi comedy
-                    movies, or experimenting with new tools that make analysis faster and cleaner.
-                </p>
-                
-                <p style="margin-bottom:0;">
-                    If you're working on genomics, single-cell, or data-driven biology and want to collaborate—<b>let's connect!</b>
-                </p>
+
+            <h2 class="about-heading">A bit about me</h2>
+
+            <p style="text-align: justify;">
+            I am Saurav, a Bioinformatics PhD candidate in Dr. Kaixiong Ye’s lab at the University of Georgia, Athens. My training spans genomics, transcriptomics, bioinformatics, and machine learning.
+            I am actively involved in multiple projects—ranging from building a chromosome-level genome assembly and annotation for a non-model species using long-read (HiFi) sequencing, to investigating how genetic variation shapes complex traits and disease.
+            </p>
+
+            <p style="text-align: justify;">
+            A major focus of my work is combining Genome-Wide Association Studies (GWAS) with single-cell RNA-seq and ATAC-seq to map genetic variants to trait-relevant cell types and uncover the regulatory programs and pathways they influence.
+            I enjoy building clean, reproducible pipelines, analyzing large-scale datasets, and turning messy biological signals into clear, interpretable insights (the scientific version of “making sense of chaos”).
+            </p>
+
+            <h2 class="about-heading">Academic Journey</h2>
+
+            <p style="text-align: justify;">
+            My journey started at Amity University, where I completed my B.Tech in Biotechnology and built my foundation in molecular biology and genetics.
+            I quickly realized I loved asking “why” questions, and computation felt like the fastest way to chase the answers.
+            That curiosity took me to IIIT-Delhi for an M.Tech in Computational Biology, where I strengthened my skills in bioinformatics, data analysis, machine learning, and programming, and began working closely with large-scale biological datasets.
+            </p>
+
+            <p style="text-align: justify;">
+            My master’s degree helped me bridge wet-lab knowledge with computational thinking, and it played a major role in my decision to pursue a PhD in Bioinformatics, where I now work on large-scale genomics and single-cell projects.
+            </p>
+
+            <h2 class="about-heading">Outside the lab</h2>
+
+            <p style="text-align: justify;">
+            When I am not in front of a screen, you’ll probably find me watching cricket. I am a huge fan and love playing whenever I get the chance.
+            I also enjoy badminton, binge-watching TV shows and movies, and exploring restaurants in Athens.
+            </p>
+
+            <p style="margin-bottom: 0; text-align: justify;">
+            I am always excited to connect and collaborate with people working in <b>genomics, biotech, or AI</b>.
+            <b>Let’s connect!</b>
+            </p>
+
             </div>
         </div>
     </div>
+
 </body>
 </html>
