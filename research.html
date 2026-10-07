@@ -3,142 +3,223 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Research - Saurav Choudhary</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f5f5f5;
-        }
-        
-        header {
-            background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('assets/images/DNA_logo.png') center/cover;
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-            min-height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        nav {
-            background: #34495e;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        nav a:hover {
-            color: #3498db;
-        }
-        
-        .container {
-            max-width: 900px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        
-        .research-section {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            margin-bottom: 30px;
-        }
-        
-        .research-section h2 {
-            color: #2c3e50;
-            margin-bottom: 20px;
-            font-size: 1.8rem;
-            border-bottom: 3px solid #3498db;
-            padding-bottom: 10px;
-        }
-        
-        .research-section p {
-            margin-bottom: 15px;
-            line-height: 1.8;
-            font-size: 1.05rem;
-        }
-        
-        .research-section ul {
-            margin-left: 25px;
-            margin-top: 15px;
-        }
-        
-        .research-section li {
-            margin-bottom: 10px;
-            line-height: 1.7;
-        }
-        
-        .research-section strong {
-            color: #2c3e50;
-        }
-    </style>
+    <title>Research | Saurav Choudhary</title>
+    <meta name="description" content="Research by Saurav Choudhary: genome, single-cell and spatial resources for Hymenolepis diminuta, and single-cell approaches to the genetics of PUFA metabolism.">
+    <meta property="og:title" content="Research | Saurav Choudhary">
+    <meta property="og:description" content="Genome assembly, single-cell atlases, spatial transcriptomics, and GWAS integration.">
+    <meta property="og:image" content="https://choudhary-saurav.github.io/assets/images/profile_640.jpg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>Research</h1>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="cv.html">CV</a></li>
-        </ul>
+
+    <nav class="site-nav">
+        <div class="wrap">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">SC</span>
+                <span>Saurav Choudhary</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a class="active" href="research.html">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </div>
     </nav>
-    
-    <div class="container">
-        <div class="research-section">
-            <h2>Building genome, studying cells and mapping spaces for <i>Hymenolepis diminuta</i></h2>
-            <p style="text-align: justify;">
-                This is a collaborative, multi-aim project with <strong>Dr. Tania Rozario</strong> and <strong>Dr. Casey Bergman</strong>, focused on building foundational genomic and single-cell resources for <i>H. diminuta</i> and using them to better understand regeneration and stem cell biology in tapeworms.
-                <br><br>
-                First part of the project focuses on generating the first end-to-end, fully annotated chromosome-level reference genome for <i>H. diminuta</i>. We are using PacBio long-read (HiFi) sequencing along with modern assembly and annotation pipelines to produce a high-quality genome that can serve as a reliable reference for future studies and provide insights into chromosome evolution in platyhelminths.
-                <br><br>
-                Second part is to build a comprehensive single-cell atlas of <i>H. diminuta</i> to map its cellular composition and explore heterogeneity within the stem cell population in the germinative region. By applying single-cell and single-nucleus RNA-seq approaches, we aim to characterize diverse stem cell states linked to the parasite’s regenerative ability and discover novel cell subtypes. This resource will support research in planarian biology and parasitology, and may help establish <i>H. diminuta</i> as a useful model for studying human tapeworm infections.
-                <br><br>
-                Final part uses spatial transcriptomics to reveal where key genes are expressed and to define the microenvironment (niche) of stem cells in the germinative region. This will help us understand how stem cell behavior is influenced by surrounding signals, with the goal of identifying novel pluripotent stem cell populations or uncovering how multiple stem cell types and their environments may exhibit pluripotent behavior under specific niche conditions.
 
+    <header class="page-hero">
+        <div class="wrap">
+            <h1>Research</h1>
+            <p>Building genomic and single-cell resources, and connecting genetic variation to the cells and pathways that drive complex traits.</p>
+        </div>
+    </header>
 
-            </p>
+    <main class="page-body">
+        <div class="wrap">
+
+            <!-- Project 1 -->
+            <section class="project">
+                <span class="project-label">Project 01 · Genomics &amp; stem cell biology</span>
+                <h2>Building the genome, studying the cells, and mapping the spaces of <i>Hymenolepis diminuta</i></h2>
+                <p class="project-meta"><i class="fa-solid fa-user-group"></i>In collaboration with Dr. Tania Rozario and Dr. Casey Bergman</p>
+                <div class="tags">
+                    <span class="tag">PacBio HiFi</span>
+                    <span class="tag">Genome assembly</span>
+                    <span class="tag">Annotation</span>
+                    <span class="tag">scRNA-seq</span>
+                    <span class="tag">snRNA-seq</span>
+                    <span class="tag">Spatial transcriptomics</span>
+                </div>
+
+                <div class="panel prose">
+                    <p>
+                        This is a collaborative, multi-aim project focused on building foundational genomic and single-cell
+                        resources for <i>H. diminuta</i> and using them to better understand regeneration and stem cell
+                        biology in tapeworms.
+                    </p>
+                </div>
+
+                <div class="aims">
+                    <article class="card">
+                        <span class="aim-num">Aim 1 · Genome</span>
+                        <h3>Chromosome-level reference genome</h3>
+                        <p>
+                            I built an end-to-end assembly and annotation pipeline that produced a chromosome-scale reference
+                            genome for <i>H. diminuta</i> from PacBio HiFi reads, with repeat annotation
+                            (RepeatModeler/RepeatMasker), gene prediction (BRAKER3), and synteny analysis, providing a
+                            high-quality reference for future studies and insights into chromosome evolution in platyhelminths.
+                        </p>
+                        <div class="pub-links">
+                            <a class="chip-link" href="https://doi.org/10.64898/2026.06.23.734100" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i> bioRxiv preprint</a>
+                            <a class="chip-link" href="https://www.ncbi.nlm.nih.gov/datasets/genome/GCA_056153285.1/" target="_blank" rel="noopener"><i class="fa-solid fa-database"></i> NCBI assembly</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <span class="aim-num">Aim 2 · Single-cell</span>
+                        <h3>Comprehensive single-cell atlas</h3>
+                        <p>
+                            Mapping the cellular composition of <i>H. diminuta</i> and the heterogeneity of stem cells in the
+                            germinative region. Using single-cell and single-nucleus RNA-seq, we aim to characterize stem cell
+                            states linked to the parasite’s regenerative ability and discover novel cell subtypes. This resource
+                            will support research in planarian biology and parasitology, and may help establish
+                            <i>H. diminuta</i> as a model for studying human tapeworm infections.
+                        </p>
+                    </article>
+
+                    <article class="card">
+                        <span class="aim-num">Aim 3 · Spatial</span>
+                        <h3>Stem cell niche in space</h3>
+                        <p>
+                            Using spatial transcriptomics to reveal where key genes are expressed and to define the stem cell
+                            niche in the germinative region. This will show how surrounding signals shape stem cell behavior,
+                            with the goal of identifying novel pluripotent stem cell populations, or uncovering how multiple
+                            stem cell types and their environments may exhibit pluripotent behavior under specific niche
+                            conditions.
+                        </p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- Project 2 -->
+            <section class="project">
+                <span class="project-label">Project 02 · Statistical &amp; functional genomics</span>
+                <h2>Linking genetic risk to cellular function: a single-cell approach to understanding PUFA metabolism</h2>
+                <p class="project-meta"><i class="fa-solid fa-flask"></i>Ye Lab, University of Georgia</p>
+                <div class="tags">
+                    <span class="tag">GWAS</span>
+                    <span class="tag">scRNA-seq</span>
+                    <span class="tag">scATAC-seq</span>
+                    <span class="tag">Spatial transcriptomics</span>
+                    <span class="tag">Fatty acid traits</span>
+                </div>
+
+                <div class="panel prose">
+                    <h2>The question</h2>
+                    <p>
+                        How does genetic variation influence fatty acid traits, and how do these signals connect to specific
+                        cell types and biological pathways? Using large-scale human genomics data, we integrate GWAS summary
+                        statistics with atlas-level single-cell datasets to move from “association signals” to more
+                        interpretable biology, identifying the cell types, genes, and regulatory programs most relevant to
+                        PUFA metabolism. The goal is to pinpoint where these traits are controlled in the body and highlight
+                        candidate mechanisms that could explain why individuals differ in fatty acid levels and related
+                        metabolic outcomes.
+                    </p>
+
+                    <h2>The approach</h2>
+                    <p>
+                        We work with single-cell RNA-seq, scATAC-seq, and spatial transcriptomics datasets, and apply
+                        computational frameworks that combine trait genetics with cell-type resolution. This includes building
+                        clean, reproducible pipelines for quality control, annotation, and downstream analysis, and producing
+                        results that are easy to interpret through clear visualizations and summaries. Ultimately, this
+                        project aims to provide a deeper, cell-type–specific view of PUFA biology and create a foundation for
+                        future work linking genetic variation to metabolic health and disease risk.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Project 3 -->
+            <section class="project">
+                <span class="project-label">Project 03 · Regulatory genomics &amp; deep learning</span>
+                <h2>Inferring gene regulatory networks from single-cell multiome data</h2>
+                <p class="project-meta"><i class="fa-solid fa-flask"></i>Ye Lab, University of Georgia</p>
+                <div class="tags">
+                    <span class="tag">scRNA-seq</span>
+                    <span class="tag">scATAC-seq</span>
+                    <span class="tag">Multiome</span>
+                    <span class="tag">Deep learning</span>
+                    <span class="tag">GRNs</span>
+                </div>
+
+                <div class="panel prose">
+                    <p>
+                        I am applying a deep learning–based framework to infer gene regulatory networks from single-cell
+                        multiome data (paired scRNA-seq and scATAC-seq) using atlas-scale human datasets, connecting
+                        chromatin accessibility to the transcription factors and target genes that define cell states.
+                    </p>
+                </div>
+            </section>
+
+            <!-- Collaborations -->
+            <section class="project">
+                <span class="project-label">Collaborative work</span>
+                <h2>Genomics and single-cell analysis with collaborators</h2>
+                <p class="project-meta"><i class="fa-solid fa-user-group"></i>Large-scale scRNA-seq analysis (QC, alignment, quantification, clustering, differential expression) and genome assembly for partner labs</p>
+
+                <div class="aims">
+                    <article class="card">
+                        <span class="aim-num">Preprint · 2026</span>
+                        <h3>Tick genome assembly and variant discovery</h3>
+                        <p>Optimizing genome assembly, chromosome synteny, and genetic variant discovery from Oxford Nanopore sequences of <i>Dermacentor reticulatus</i> ticks.</p>
+                        <div class="pub-links">
+                            <a class="chip-link" href="https://doi.org/10.64898/2026.09.18.752137" target="_blank" rel="noopener"><i class="fa-solid fa-file-lines"></i> bioRxiv preprint</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <span class="aim-num">J Clin Invest · 2024</span>
+                        <h3>CAR T cell therapy</h3>
+                        <p>IL-2-inducible T cell kinase deficiency sustains chimeric antigen receptor T cell therapy against tumor cells.</p>
+                        <div class="pub-links">
+                            <a class="chip-link" href="https://doi.org/10.1172/JCI178558" target="_blank" rel="noopener"><i class="fa-solid fa-link"></i> DOI</a>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <span class="aim-num">Front Cell Dev Biol · 2024</span>
+                        <h3>Taste bud progenitors</h3>
+                        <p>The duct of von Ebner's glands is a source of Sox10+ taste bud progenitors and susceptible to pathogen infections.</p>
+                        <div class="pub-links">
+                            <a class="chip-link" href="https://doi.org/10.3389/fcell.2024.1460669" target="_blank" rel="noopener"><i class="fa-solid fa-link"></i> DOI</a>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
         </div>
-        
-        <div class="research-section">
-            <h2>Linking Genetic Risk to Cellular Function: A Single-Cell Approach to Understanding PUFA Metabolism</h2>
-            <p style="text-align: justify;">
-                This project focuses on understanding how genetic variation influences fatty acid traits and how these signals connect to specific cell types and biological pathways. Using large-scale human genomics data, We integrate GWAS summary statistics with atlas-level single-cell datasets to move from “association signals” to more interpretable biology—identifying the cell types, genes, and regulatory programs most relevant to PUFA metabolism. The goal is to pinpoint where these traits are controlled in the body and highlight candidate mechanisms that could explain why individuals differ in fatty acid levels and related metabolic outcomes.
-                <br><br>
-                To achieve this, we work with single-cell RNA-seq , scATAC-seq datasets and spatial transcriptomics and apply computational frameworks that combine trait genetics with cell-type resolution. This includes building clean, reproducible pipelines for quality control, annotation, and downstream analysis, and generating results that are easy to interpret through clear visualizations and summaries. Ultimately, this project aims to provide a deeper, cell-type–specific view of PUFA biology and create a foundation for future work linking genetic variation to metabolic health and disease risk.
-            </p>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>© 2026 Saurav Choudhary · University of Georgia</span>
+            <div class="footer-social">
+                <a href="https://scholar.google.com/citations?user=HQW7pr0AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+                <a href="https://github.com/Saurav0731" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/saurav317/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/saurav317" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
         </div>
-        </div>
-    </div>
+    </footer>
+
+    <script src="assets/js/site.js"></script>
 </body>
 </html>

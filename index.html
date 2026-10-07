@@ -1,210 +1,202 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Saurav Choudhary - Home</title>
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f5f5f5;
-        }
-        
-        header {
-            background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('assets/images/DNA_logo.png') center/cover;
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-            min-height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        nav {
-            background: #2c3e50;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        nav a:hover {
-            color: #3498db;
-        }
-        
-        .container {
-            max-width: 1200px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-        
-        .intro-section {
-            background: white;
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            margin-bottom: 40px;
-        }
-        
-        .intro-content {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-        
-        .profile-image {
-            width: 150px;
-            height: 150px;
-            border-radius: 50%;
-            object-fit: cover;
-            border: 4px solid rgba(0,0,0,0.08);
-            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-        }
-        
-        .intro-text {
-            max-width: 720px;
-            font-size: 1.1rem;
-            line-height: 1.7;
-        }
-        
-        .features {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 30px;
-            margin-top: 40px;
-        }
-        
-        .feature-card {
-            background: white;
-            padding: 30px;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-            transition: transform 0.3s, box-shadow 0.3s;
-        }
-        
-        .feature-card:hover {
-            transform: translateY(-5px);
-            box-shadow: 0 8px 25px rgba(0,0,0,0.15);
-        }
-        
-        .feature-card h3 {
-            color: #2c3e50;
-            margin-bottom: 15px;
-            font-size: 1.4rem;
-        }
-        
-        .feature-card p {
-            color: #666;
-            line-height: 1.6;
-        }
-        
-        .quick-links {
-            text-align: center;
-            margin-top: 50px;
-            padding: 30px;
-            background: white;
-            border-radius: 12px;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
-        }
-        
-        .quick-links strong {
-            display: block;
-            margin-bottom: 15px;
-            font-size: 1.1rem;
-            color: #2c3e50;
-        }
-        
-        .quick-links a {
-            color: #3498db;
-            text-decoration: none;
-            margin: 0 10px;
-            font-weight: 500;
-        }
-        
-        .quick-links a:hover {
-            text-decoration: underline;
-        }
-    </style>
+    <title>Saurav Choudhary | Bioinformatics PhD Candidate</title>
+    <meta name="description" content="Saurav Choudhary is a PhD candidate in Bioinformatics at the University of Georgia working on single-cell genomics, GWAS integration, and genome assembly.">
+
+    <!-- Social preview cards (LinkedIn, X, Slack) -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Saurav Choudhary | Bioinformatics PhD Candidate">
+    <meta property="og:description" content="Single-cell genomics, GWAS integration, and genome assembly at the University of Georgia.">
+    <meta property="og:url" content="https://choudhary-saurav.github.io/">
+    <meta property="og:image" content="https://choudhary-saurav.github.io/assets/images/profile_640.jpg">
+    <meta name="twitter:card" content="summary">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-    <header>
-        <h1>!! Welcome !!</h1>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="cv.html">CV</a></li>
-        </ul>
+
+    <nav class="site-nav">
+        <div class="wrap">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">SC</span>
+                <span>Saurav Choudhary</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a class="active" href="index.html">Home</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </div>
     </nav>
-    
-    <div class="container">
-        <div class="intro-section">
-            <div class="intro-content">
-                <img src="assets/images/Saurav_profile.JPG" alt="Saurav Choudhary" class="profile-image">
-                <div class="intro-text">
-                    <p>
-                        Hello! I am Saurav, a PhD candidate in Bioinformatics at the University of Georgia, working in Dr. Kaixiong Ye's lab. I am originally from Delhi, India, and currently based in Athens, Georgia.
-                        
-                    </p>
+
+    <header class="hero">
+        <div class="wrap">
+            <div>
+                <span class="eyebrow">PhD Candidate · Bioinformatics</span>
+                <h1>Saurav Choudhary</h1>
+                <p class="role"><strong>University of Georgia</strong> · Ye Lab, Athens, GA</p>
+                <p class="lede">
+                    I connect genetic variation to the cell types and regulatory programs that shape complex traits,
+                    combining GWAS with single-cell multi-omics and deep learning, and I build chromosome-scale
+                    genome resources for non-model organisms.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="assets/pdfs/Saurav_Choudhary_2026.pdf" target="_blank" rel="noopener">
+                        <i class="fa-solid fa-file-arrow-down"></i> Download CV
+                    </a>
+                    <a class="btn btn-ghost" href="research.html">
+                        View research <i class="fa-solid fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="hero-social">
+                    <a href="mailto:saurav.choudhary@uga.edu" aria-label="Email"><i class="fa-solid fa-envelope"></i></a>
+                    <a href="https://scholar.google.com/citations?user=HQW7pr0AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+                    <a href="https://github.com/Saurav0731" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/saurav317/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://x.com/saurav317" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
                 </div>
             </div>
-        </div>
-        
-        <div class="features">
-            <div class="feature-card">
-                <h3>Genome Assembly</h3>
-                <p>Chromosome-scale genome assembly and annotation using long-read sequencing.</p>
-            </div>
-            
-            <div class="feature-card">
-                <h3>Single-cell Genomics</h3>
-                <p>Atlas-building with large single-cell datasets for cell-type discovery and biological insight.</p>
-            </div>
-            
-            <div class="feature-card">
-                <h3>GWAS Integration</h3>
-                <p>Linking GWAS variants to trait-relevant cell types using single-cell multi-omics, with a focus on PUFA metabolism.</p>
+            <div class="portrait">
+                <img src="assets/images/profile_640.jpg" alt="Portrait of Saurav Choudhary">
             </div>
         </div>
-        
-        <div class="quick-links">
-            <strong>Quick links:</strong>
-            <a href="assets/pdfs/Saurav_Choudhary_2026.pdf">CV</a> ·
-            <a href="https://github.com/Saurav0731" target="_blank">GitHub</a> ·
-            <a href="https://scholar.google.com/citations?user=HQW7pr0AAAAJ&hl=en" target="_blank">Google Scholar</a> ·
-            <a href="mailto:saurav.choudhary@uga.edu">Email</a>
+    </header>
+
+    <main>
+        <section class="section">
+            <div class="wrap">
+                <div class="section-head">
+                    <div>
+                        <h2>Research interests</h2>
+                        <p>From raw sequencing reads to interpretable biology.</p>
+                    </div>
+                    <a class="section-link" href="research.html">All projects →</a>
+                </div>
+
+                <div class="cards">
+                    <article class="card">
+                        <div class="card-icon"><i class="fa-solid fa-dna"></i></div>
+                        <h3>GWAS × Single-cell Integration</h3>
+                        <p>Linking GWAS variants to trait-relevant cell types using single-cell multi-omics, with a focus on PUFA metabolism, and inferring gene regulatory networks with deep learning.</p>
+                        <div class="tags">
+                            <span class="tag">GWAS</span>
+                            <span class="tag">scRNA-seq</span>
+                            <span class="tag">scATAC-seq</span>
+                            <span class="tag">GRNs</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon"><i class="fa-solid fa-circle-nodes"></i></div>
+                        <h3>Single-cell Genomics</h3>
+                        <p>Atlas-building with large single-cell datasets for cell-type discovery, stem cell heterogeneity, and spatial niches.</p>
+                        <div class="tags">
+                            <span class="tag">Cell atlases</span>
+                            <span class="tag">snRNA-seq</span>
+                            <span class="tag">Spatial</span>
+                        </div>
+                    </article>
+
+                    <article class="card">
+                        <div class="card-icon"><i class="fa-solid fa-layer-group"></i></div>
+                        <h3>Genome Assembly</h3>
+                        <p>Chromosome-scale genome assembly and annotation of non-model species using long-read sequencing, including a new reference genome for the rat tapeworm.</p>
+                        <div class="tags">
+                            <span class="tag">PacBio HiFi</span>
+                            <span class="tag">Annotation</span>
+                            <span class="tag">Synteny</span>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap split">
+                <div class="panel">
+                    <h2>News &amp; highlights</h2>
+                    <ul class="news">
+                        <li><time>Sep 2026</time><span><strong>2nd place</strong>, Poster Presentation Competition, IOB Symposium, University of Georgia.</span></li>
+                        <li><time>Sep 2026</time><span>New preprint on bioRxiv: genome assembly and variant discovery in <i>Dermacentor reticulatus</i> ticks.</span></li>
+                        <li><time>Jun 2026</time><span>New first-author preprint: a high-quality reference genome for the rat tapeworm <i>Hymenolepis diminuta</i>.</span></li>
+                        <li><time>2025</time><span>Poster presentation at <strong>ASHG 2025</strong>, Boston.</span></li>
+                        <li><time>Sep 2025</time><span>Genetics Retreat Poster Award.</span></li>
+                        <li><time>May 2025</time><span>Selected participant, Duke–Chen Institute Boot Camp on AI &amp; AI-Accelerated Medical Research.</span></li>
+                        <li><time>Apr 2025</time><span>“Best Minimalistic Poster Design,” IOB Spring Retreat.</span></li>
+                    </ul>
+                    <div class="panel-foot"><a href="publications.html">All presentations →</a></div>
+                </div>
+
+                <div class="panel">
+                    <h2>Selected publications</h2>
+                    <div class="pub">
+                        <a class="pub-title" href="https://doi.org/10.64898/2026.06.23.734100" target="_blank" rel="noopener">
+                            Assembly of a high-quality reference genome for the rat tapeworm <i>Hymenolepis diminuta</i>
+                        </a>
+                        <div class="pub-meta"><strong>Choudhary SK</strong>, Sundaresha N, Ye K, Bergman CM, Rozario T · <em>bioRxiv</em> (preprint) · 2026</div>
+                    </div>
+                    <div class="pub">
+                        <a class="pub-title" href="https://doi.org/10.1172/JCI178558" target="_blank" rel="noopener">
+                            IL-2-inducible T cell kinase deficiency sustains chimeric antigen receptor T cell therapy against tumor cells
+                        </a>
+                        <div class="pub-meta">Fu Z, … <strong>Choudhary SK</strong>, Ye K, … Peng H · <em>J Clin Invest</em> · 2024</div>
+                    </div>
+                    <div class="pub">
+                        <a class="pub-title" href="https://doi.org/10.3389/fcell.2024.1460669" target="_blank" rel="noopener">
+                            The duct of von Ebner's glands is a source of Sox10+ taste bud progenitors and susceptible to pathogen infections
+                        </a>
+                        <div class="pub-meta">Yu W, … <strong>Choudhary SK</strong>, … Liu HX · <em>Front Cell Dev Biol</em> · 2024</div>
+                    </div>
+                    <div class="pub">
+                        <a class="pub-title" href="https://doi.org/10.3390/molecules26144147" target="_blank" rel="noopener">
+                            In silico prediction, molecular docking and dynamics studies of steroidal alkaloids of <i>Holarrhena pubescens</i> to guanylyl cyclase C
+                        </a>
+                        <div class="pub-meta">Gupta N†, <strong>Choudhary SK†</strong>, … Chaturvedi A · <em>Molecules</em> · 2021 · † equal contribution</div>
+                    </div>
+                    <div class="panel-foot"><a href="publications.html">All publications →</a></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="section">
+            <div class="wrap">
+                <div class="contact">
+                    <div>
+                        <h2>Let’s connect</h2>
+                        <p>I’m always happy to talk with people working in genomics, biotech, or AI, whether it’s about collaborations, research ideas, or opportunities.</p>
+                    </div>
+                    <a class="btn btn-primary" href="mailto:saurav.choudhary@uga.edu">
+                        <i class="fa-solid fa-envelope"></i> saurav.choudhary@uga.edu
+                    </a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>© 2026 Saurav Choudhary · University of Georgia</span>
+            <div class="footer-social">
+                <a href="https://scholar.google.com/citations?user=HQW7pr0AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+                <a href="https://github.com/Saurav0731" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/saurav317/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/saurav317" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
+            </div>
         </div>
-    </div>
+    </footer>
+
+    <script src="assets/js/site.js"></script>
 </body>
 </html>

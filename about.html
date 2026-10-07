@@ -3,323 +3,243 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About - Saurav Choudhary</title>
+    <title>About | Saurav Choudhary</title>
+    <meta name="description" content="About Saurav Choudhary, a Bioinformatics PhD candidate at the University of Georgia: background, education, and interests.">
+    <meta property="og:title" content="About | Saurav Choudhary">
+    <meta property="og:description" content="Bioinformatics PhD candidate at the University of Georgia.">
+    <meta property="og:image" content="https://choudhary-saurav.github.io/assets/images/profile_640.jpg">
 
-    <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-        }
-        
-        body {
-            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background: #f5f5f5;
-        }
-
-        header {
-            background: linear-gradient(rgba(0,0,0,0.35), rgba(0,0,0,0.35)), url('assets/images/DNA_logo.png') center/cover;
-            color: white;
-            padding: 80px 20px;
-            text-align: center;
-            min-height: 300px;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        nav {
-            background: #34495e;
-            padding: 15px 0;
-            position: sticky;
-            top: 0;
-            z-index: 100;
-        }
-        
-        nav ul {
-            list-style: none;
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-        }
-        
-        nav a {
-            color: white;
-            text-decoration: none;
-            font-weight: 500;
-            transition: color 0.3s;
-        }
-        
-        nav a:hover {
-            color: #3498db;
-        }
-        
-        .container {
-            max-width: 1400px;
-            margin: 40px auto;
-            padding: 0 20px;
-        }
-
-        /* =========================
-           CENTERED TWO-COLUMN LAYOUT
-           ========================= */
-        .about-grid {
-            display: flex;
-            gap: 28px;
-            align-items: flex-start;
-            justify-content: center;
-            width: 100%;
-            max-width: 1400px;
-            margin: 18px auto 0 auto;
-            flex-wrap: nowrap;
-        }
-        
-        /* =========================
-           LEFT: EDUCATION CARD
-           ========================= */
-        .edu-card {
-            width: 620px;
-            max-width: 620px;
-            background: #ffffff;
-            border: 1px solid rgba(0,0,0,0.08);
-            border-radius: 18px;
-            padding: 32px;
-            box-shadow: 0 10px 28px rgba(0,0,0,0.08);
-        }
-        
-        .edu-title {
-            font-weight: 900;
-            font-size: 1.35rem;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 0.08em;
-        }
-        
-        .edu-item {
-            display: flex;
-            gap: 20px;
-            align-items: center;
-            padding: 20px 0;
-            border-bottom: 1px solid rgba(0,0,0,0.06);
-        }
-        
-        .edu-item:last-child {
-            border-bottom: none;
-        }
-        
-        .edu-logo {
-            width: 90px;
-            height: 90px;
-            border-radius: 16px;
-            object-fit: contain;
-            background: #fff;
-            border: 1px solid rgba(0,0,0,0.06);
-            padding: 10px;
-            flex-shrink: 0;
-        }
-        
-        .edu-text {
-            line-height: 1.3;
-            flex: 1;
-        }
-        
-        .edu-school {
-            font-weight: 850;
-            font-size: 1.15rem;
-            margin-bottom: 4px;
-        }
-        
-        .edu-degree {
-            font-size: 1.05rem;
-            opacity: 0.85;
-            margin-bottom: 2px;
-        }
-        
-        .edu-years {
-            font-size: 0.95rem;
-            opacity: 0.70;
-        }
-        
-        /* =========================
-           RIGHT: ABOUT DESCRIPTION BOX
-           ========================= */
-        .about-textbox {
-            flex: 1;
-            width: auto;
-            max-width: 750px;
-            min-width: 650px;
-            background: rgba(120, 190, 255, 0.22);
-            border-radius: 22px;
-            padding: 34px;
-            box-shadow: 0 10px 28px rgba(0,0,0,0.08);
-            border: 1px solid rgba(0,0,0,0.06);
-        }
-        
-        .about-textbox p {
-            margin-top: 0;
-            margin-bottom: 14px;
-            line-height: 1.65;
-            font-size: 1.06rem;
-        }
-
-        /* Headings inside blue card */
-        .about-heading {
-            margin: 0 0 12px 0;
-            font-size: 1.25rem;
-            font-weight: 900;
-            letter-spacing: 0.02em;
-            color: #1f2d3d;
-        }
-
-        /* Hobby tags */
-        .about-pills {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 10px;
-            margin: 10px 0 18px 0;
-        }
-
-        .pill {
-            display: inline-block;
-            padding: 8px 12px;
-            border-radius: 999px;
-            background: rgba(255,255,255,0.65);
-            border: 1px solid rgba(0,0,0,0.06);
-            font-size: 0.95rem;
-        }
-        
-        /* =========================
-           MOBILE RESPONSIVE
-           ========================= */
-        @media (max-width: 1100px) {
-            .about-grid {
-                flex-wrap: wrap;
-                justify-content: center;
-            }
-            
-            .edu-card {
-                width: 100%;
-                max-width: 650px;
-            }
-            
-            .about-textbox {
-                min-width: unset;
-                max-width: 100%;
-            }
-        }
-        
-        @media (max-width: 600px) {
-            .edu-logo {
-                width: 70px;
-                height: 70px;
-            }
-            
-            .edu-school {
-                font-size: 1.05rem;
-            }
-            
-            .edu-card {
-                padding: 24px;
-            }
-        }
-    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Raleway:wght@700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
-
 <body>
-    <header>
-        <h1>About</h1>
-    </header>
-    
-    <nav>
-        <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="about.html">About</a></li>
-            <li><a href="research.html">Research</a></li>
-            <li><a href="publications.html">Publications</a></li>
-            <li><a href="cv.html">CV</a></li>
-        </ul>
+
+    <nav class="site-nav">
+        <div class="wrap">
+            <a class="brand" href="index.html">
+                <span class="brand-mark">SC</span>
+                <span>Saurav Choudhary</span>
+            </a>
+            <button class="nav-toggle" aria-label="Toggle menu" aria-expanded="false">
+                <i class="fa-solid fa-bars"></i>
+            </button>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a class="active" href="about.html">About</a></li>
+                <li><a href="research.html">Research</a></li>
+                <li><a href="publications.html">Publications</a></li>
+                <li><a href="cv.html">CV</a></li>
+            </ul>
+        </div>
     </nav>
-    
-    <div class="container">
-        <div class="about-grid">
 
-            <!-- LEFT: EDUCATION CARD -->
-            <div class="edu-card">
-                <div class="edu-title">Education</div>
-                
-                <div class="edu-item">
-                    <img class="edu-logo" src="assets/images/UGA_logo.png" alt="University of Georgia logo">
-                    <div class="edu-text">
-                        <div class="edu-school">University of Georgia</div>
-                        <div class="edu-degree">PhD, Bioinformatics</div>
-                        <div class="edu-years">2022 – Present</div>
-                    </div>
+    <header class="page-hero">
+        <div class="wrap">
+            <h1>About me</h1>
+            <p>Bioinformatician, single-cell enthusiast, and cricket fan, originally from Delhi and now based in Athens, Georgia.</p>
+        </div>
+    </header>
+
+    <main class="page-body">
+        <div class="wrap about-layout">
+
+            <article class="panel prose">
+                <h2>A bit about me</h2>
+                <p>
+                    I am Saurav, a Bioinformatics PhD candidate in Dr. Kaixiong Ye’s lab at the University of Georgia, Athens.
+                    My training spans genomics, transcriptomics, bioinformatics, and machine learning. I am actively involved
+                    in multiple projects, ranging from building a chromosome-level genome assembly and annotation for a
+                    non-model species using long-read (HiFi) sequencing, to investigating how genetic variation shapes complex
+                    traits and disease.
+                </p>
+                <p>
+                    A major focus of my work is combining Genome-Wide Association Studies (GWAS) with single-cell RNA-seq and
+                    ATAC-seq to map genetic variants to trait-relevant cell types and uncover the regulatory programs and
+                    pathways they influence. I enjoy building clean, reproducible pipelines, analyzing large-scale datasets,
+                    and turning messy biological signals into clear, interpretable insights (the scientific version of
+                    “making sense of chaos”).
+                </p>
+
+                <h2>My story</h2>
+                <p>
+                    My journey started at Amity University, where I completed my B.Tech in Biotechnology and built my
+                    foundation in molecular biology and genetics. I quickly realized I loved asking “why” questions, and
+                    computation felt like the fastest way to chase the answers. That curiosity took me to IIIT-Delhi for an
+                    M.Tech in Computational Biology, where I strengthened my skills in bioinformatics, data analysis, machine
+                    learning, and programming, and began working closely with large-scale biological datasets.
+                </p>
+                <p>
+                    My master’s degree helped me bridge wet-lab knowledge with computational thinking, and it played a major
+                    role in my decision to pursue a PhD in Bioinformatics, where I now work on large-scale genomics and
+                    single-cell projects.
+                </p>
+
+                <h2>Outside the lab</h2>
+                <p>
+                    When I am not in front of a screen, you’ll probably find me watching cricket. I am a huge fan and love
+                    playing whenever I get the chance. I also enjoy badminton, binge-watching TV shows and movies, and
+                    exploring restaurants in Athens.
+                </p>
+                <div class="tags hobbies">
+                    <span class="tag tag-lg">🏏 Cricket</span>
+                    <span class="tag tag-lg">🏸 Badminton</span>
+                    <span class="tag tag-lg">🎬 TV shows &amp; movies</span>
+                    <span class="tag tag-lg">🍜 Exploring Athens food</span>
                 </div>
-                
-                <div class="edu-item">
-                    <img class="edu-logo" src="assets/images/IIITD_logo.png" alt="IIIT-Delhi logo">
-                    <div class="edu-text">
-                        <div class="edu-school">IIIT-Delhi</div>
-                        <div class="edu-degree">M.Tech, Computational Biology</div>
-                        <div class="edu-years">2020 – 2022</div>
+                <p>
+                    I am always excited to connect and collaborate with people working in <strong>genomics, biotech, or AI</strong>.
+                    <a href="mailto:saurav.choudhary@uga.edu"><strong>Let’s connect!</strong></a>
+                </p>
+            </article>
+
+            <aside class="sidebar">
+                <section class="panel">
+                    <h2>Education</h2>
+                    <ul class="edu">
+                        <li>
+                            <img src="assets/images/UGA_logo.png" alt="University of Georgia logo">
+                            <div>
+                                <div class="school">University of Georgia</div>
+                                <div class="degree">PhD, Bioinformatics</div>
+                                <div class="years">2022 – Present</div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/images/IIITD_logo.png" alt="IIIT-Delhi logo">
+                            <div>
+                                <div class="school">IIIT-Delhi</div>
+                                <div class="degree">M.Tech, Computational Biology</div>
+                                <div class="years">2020 – 2022</div>
+                            </div>
+                        </li>
+                        <li>
+                            <img src="assets/images/Amity_logo.png" alt="Amity University logo">
+                            <div>
+                                <div class="school">Amity University</div>
+                                <div class="degree">B.Tech, Biotechnology</div>
+                                <div class="years">2015 – 2019</div>
+                            </div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="panel">
+                    <h2>Research experience</h2>
+                    <ul class="exp">
+                        <li>
+                            <div class="role">Graduate Student Researcher</div>
+                            <div class="org">University of Georgia · Advisor: Dr. Kaixiong Ye</div>
+                            <div class="years">Aug 2022 – Present</div>
+                        </li>
+                        <li>
+                            <div class="role">Student Researcher</div>
+                            <div class="org">IIIT-Delhi · Advisor: Dr. Vibhor Kumar</div>
+                            <div class="years">Jun 2021 – Jun 2022</div>
+                        </li>
+                        <li>
+                            <div class="role">Bioinformatics Analyst</div>
+                            <div class="org">Eminent Biosciences, Indore</div>
+                            <div class="years">Feb 2020 – Jul 2020</div>
+                        </li>
+                        <li>
+                            <div class="role">Research Intern</div>
+                            <div class="org">CSIR-Institute of Genomics and Integrative Biology, New Delhi</div>
+                            <div class="years">Jan 2019 – Apr 2019</div>
+                        </li>
+                        <li>
+                            <div class="role">Student Researcher (Structural Bioinformatics)</div>
+                            <div class="org">Amity University · Advisor: Dr. Archana Chaturvedi</div>
+                            <div class="years">Jan 2019 – Apr 2019</div>
+                        </li>
+                    </ul>
+                </section>
+
+                <section class="panel">
+                    <h2>Expertise</h2>
+                    <div class="tags">
+                        <span class="tag">GWAS</span>
+                        <span class="tag">scRNA-seq</span>
+                        <span class="tag">scATAC-seq</span>
+                        <span class="tag">Spatial transcriptomics</span>
+                        <span class="tag">Genome assembly</span>
+                        <span class="tag">Genome annotation</span>
+                        <span class="tag">PacBio HiFi</span>
+                        <span class="tag">Bulk RNA-seq</span>
+                        <span class="tag">GRN inference</span>
+                        <span class="tag">Comparative genomics</span>
+                        <span class="tag">Machine learning</span>
+                        <span class="tag">Deep learning</span>
+                        <span class="tag">Reproducible pipelines</span>
                     </div>
-                </div>
-                
-                <div class="edu-item">
-                    <img class="edu-logo" src="assets/images/Amity_logo.png" alt="Amity University logo">
-                    <div class="edu-text">
-                        <div class="edu-school">Amity University</div>
-                        <div class="edu-degree">B.Tech, Biotechnology</div>
-                        <div class="edu-years">2015 – 2019</div>
+                </section>
+
+                <section class="panel">
+                    <h2>Toolkit</h2>
+                    <div class="toolkit">
+                        <div class="tool-group">Languages</div>
+                        <div class="tags">
+                            <span class="tag">R</span>
+                            <span class="tag">Python</span>
+                            <span class="tag">Bash</span>
+                        </div>
+                        <div class="tool-group">Single-cell &amp; RNA-seq</div>
+                        <div class="tags">
+                            <span class="tag">Seurat</span>
+                            <span class="tag">Scanpy</span>
+                            <span class="tag">ArchR</span>
+                            <span class="tag">DESeq2</span>
+                            <span class="tag">Cell Ranger</span>
+                            <span class="tag">STAR</span>
+                            <span class="tag">HISAT2</span>
+                        </div>
+                        <div class="tool-group">Genome assembly</div>
+                        <div class="tags">
+                            <span class="tag">Hifiasm</span>
+                            <span class="tag">minimap2</span>
+                            <span class="tag">BRAKER3</span>
+                            <span class="tag">RepeatMasker</span>
+                            <span class="tag">GENESPACE</span>
+                        </div>
+                        <div class="tool-group">ML &amp; data</div>
+                        <div class="tags">
+                            <span class="tag">PyTorch</span>
+                            <span class="tag">scikit-learn</span>
+                            <span class="tag">Pandas</span>
+                            <span class="tag">NumPy</span>
+                            <span class="tag">Tidyverse</span>
+                            <span class="tag">ggplot2</span>
+                        </div>
+                        <div class="tool-group">Computing</div>
+                        <div class="tags">
+                            <span class="tag">Linux HPC</span>
+                            <span class="tag">SLURM</span>
+                            <span class="tag">Git</span>
+                        </div>
                     </div>
-                </div>
-            </div>
-            
-            <!-- RIGHT: ABOUT TEXT -->
-            <div class="about-textbox">
+                </section>
 
-            <h2 class="about-heading">A bit about me</h2>
+                <a class="btn btn-outline" href="assets/pdfs/Saurav_Choudhary_2026.pdf" target="_blank" rel="noopener" style="justify-content: center;">
+                    <i class="fa-solid fa-file-arrow-down"></i> Download CV
+                </a>
+            </aside>
+        </div>
+    </main>
 
-            <p style="text-align: justify;">
-            I am Saurav, a Bioinformatics PhD candidate in Dr. Kaixiong Ye’s lab at the University of Georgia, Athens. My training spans genomics, transcriptomics, bioinformatics, and machine learning.
-            I am actively involved in multiple projects—ranging from building a chromosome-level genome assembly and annotation for a non-model species using long-read (HiFi) sequencing, to investigating how genetic variation shapes complex traits and disease.
-            </p>
-
-            <p style="text-align: justify;">
-            A major focus of my work is combining Genome-Wide Association Studies (GWAS) with single-cell RNA-seq and ATAC-seq to map genetic variants to trait-relevant cell types and uncover the regulatory programs and pathways they influence.
-            I enjoy building clean, reproducible pipelines, analyzing large-scale datasets, and turning messy biological signals into clear, interpretable insights (the scientific version of “making sense of chaos”).
-            </p>
-
-            <h2 class="about-heading">Academic Journey</h2>
-
-            <p style="text-align: justify;">
-            My journey started at Amity University, where I completed my B.Tech in Biotechnology and built my foundation in molecular biology and genetics.
-            I quickly realized I loved asking “why” questions, and computation felt like the fastest way to chase the answers.
-            That curiosity took me to IIIT-Delhi for an M.Tech in Computational Biology, where I strengthened my skills in bioinformatics, data analysis, machine learning, and programming, and began working closely with large-scale biological datasets.
-            </p>
-
-            <p style="text-align: justify;">
-            My master’s degree helped me bridge wet-lab knowledge with computational thinking, and it played a major role in my decision to pursue a PhD in Bioinformatics, where I now work on large-scale genomics and single-cell projects.
-            </p>
-
-            <h2 class="about-heading">Outside the lab</h2>
-
-            <p style="text-align: justify;">
-            When I am not in front of a screen, you’ll probably find me watching cricket. I am a huge fan and love playing whenever I get the chance.
-            I also enjoy badminton, binge-watching TV shows and movies, and exploring restaurants in Athens.
-            </p>
-
-            <p style="margin-bottom: 0; text-align: justify;">
-            I am always excited to connect and collaborate with people working in <b>genomics, biotech, or AI</b>.
-            <b>Let’s connect!</b>
-            </p>
-
+    <footer class="site-footer">
+        <div class="wrap">
+            <span>© 2026 Saurav Choudhary · University of Georgia</span>
+            <div class="footer-social">
+                <a href="https://scholar.google.com/citations?user=HQW7pr0AAAAJ&hl=en" target="_blank" rel="noopener" aria-label="Google Scholar"><i class="fa-solid fa-graduation-cap"></i></a>
+                <a href="https://github.com/Saurav0731" target="_blank" rel="noopener" aria-label="GitHub"><i class="fa-brands fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/saurav317/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+                <a href="https://x.com/saurav317" target="_blank" rel="noopener" aria-label="X"><i class="fa-brands fa-x-twitter"></i></a>
             </div>
         </div>
-    </div>
+    </footer>
 
+    <script src="assets/js/site.js"></script>
 </body>
 </html>
