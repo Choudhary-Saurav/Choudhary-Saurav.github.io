@@ -242,6 +242,32 @@ h1, h2, h3 {
     pointer-events: none;
 }
 
+.hero.hero--animated::before,
+.page-hero.hero--animated::before {
+    display: none;
+}
+
+.hero-canvas {
+    position: absolute;
+    inset: 0;
+    pointer-events: none;
+    -webkit-mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.3) 40%, #000 72%);
+    mask-image: linear-gradient(90deg, rgba(0, 0, 0, 0.15) 0%, rgba(0, 0, 0, 0.3) 40%, #000 72%);
+}
+
+@media (max-width: 860px) {
+    .hero-canvas {
+        -webkit-mask-image: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.2) 45%, rgba(0, 0, 0, 0.2) 100%);
+        mask-image: linear-gradient(180deg, #000 0%, rgba(0, 0, 0, 0.2) 45%, rgba(0, 0, 0, 0.2) 100%);
+    }
+
+    .page-hero .hero-canvas {
+        -webkit-mask-image: none;
+        mask-image: none;
+        opacity: 0.35;
+    }
+}
+
 .hero .wrap {
     position: relative;
     display: grid;
