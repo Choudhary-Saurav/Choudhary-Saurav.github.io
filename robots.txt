@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://choudhary-saurav.github.io/sitemap.xml
